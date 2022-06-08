@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Cadastro</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="titulo">
+    <center>
+        <h1>cadastro</h1>
+    </center>
+    </div>
+<br><br><br>
+<div class="form">
+    <form name=f1 method=post action="gravar.php">
+        <div class="labels">
+        <label>Nome:</label> 
+        <input type="text" name="cli_nome" value="" placeholder="Digite seu Nome"><br><br>
+    </div>
+    <div class="labels">
+        <label>Telefone:</label> 
+        <input type="text" name="cli_fone"><br><br>
+    </div>
+    
+    <div class="labels">
+        <label>CPF:</label> 
+        <input type="text" name="cli_cpf"><br><br>
+    </div>
+    <div class="labels">
+        <label>Data de Nascimento:</label> 
+        <input type="date" name="cli_data"><br><br>
+    </div>
+    <div class="labels">
+        <input type="submit" name="botao" id="Cadastrar"><br><br>
+    </div>
+    <div class="botao">
+        <a href="principal.html"> <span class="material-icons">
+            arrow_back
+            </span> </a>
+</div>
+</form>
+</div>
+
+</body>
+</html>

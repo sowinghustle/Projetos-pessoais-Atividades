@@ -1,0 +1,107 @@
+:root {
+    --azulmeu:rgb(150, 168, 245);
+    
+}
+
+body{
+    background: #FFFFFF;
+    font-family: poppins;
+}
+
+.titulo {
+    font-size: large;
+    color: #403D3D;
+    display: flex;
+    justify-content: center;
+}
+div.form label{
+    display: inline-block;
+ width: 18ch;
+ 
+
+}
+
+div.form {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+
+}
+
+form {
+
+    border: #FFF5C0;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #FFF5C0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    
+}
+
+.labels {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #403D3D;
+}
+
+.labels input {
+/* adicione padding, width, height e margin */
+padding: 5px;
+width: 300px;
+height: 20px;
+}
+
+.labels input[type=submit] {
+    padding: 0;
+    height: 50px;
+    width: 200px;
+    font-family: poppins;
+    border-radius: 10px;
+    
+}
+
+.busca {
+    padding: 50px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.labelsBusca input {
+    /* adicione padding, width, height e margin */
+    padding: 5px;
+    width: 100px;
+    height: 20px;
+    }
+    
+.labelsBusca input[type=submit] {
+    padding: 0;
+    height: 35px;
+    width: 100px;
+    font-family: poppins;
+    border-radius: 5px;
+    margin: 15px auto 0;
+    display: block;
+    justify-content: center;
+}
+.labelsBusca {
+    display: block;
+    width: 400px;
+} 
+.labelsBusca > div:first-child {
+    display: flex;
+}
+.labelsBusca > div:first-child label {
+    width: 8ch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.labelsBusca > div:first-child input {
+    flex-grow: 1;
+}
