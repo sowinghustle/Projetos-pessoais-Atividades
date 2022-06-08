@@ -1,0 +1,27 @@
+nav {
+    background-color: #FFFFFF;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
+nav .logo {
+    color: #353597;
+    float: left;
+    display: block;
+    padding: 14px 16px;
+}
+
+nav a {
+    color: #353597;
+    float: right;
+    text-decoration: none;
+    display: block;
+    padding: 14px 16px;
+}
+
+nav a:hover {
+    transition: 05s;
+    background-color: #9999C9;
+    color: #ff7c1e;
+}

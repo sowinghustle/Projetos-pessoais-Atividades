@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css');
+
+*{
+    font-family: Poppins;
+}
+header {
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #353597;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo a {
+    position: absolute;
+    width: 95px;
+    height: 95px;
+    left: 30px;
+    top: 0px;
+}
+
+nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #ffffff;
+    position: absolute;
+    width: 100%;
+    height: 95px;
+    left: 0px;
+    top: 0px;
+    box-shadow: 0px 10px 30px rgba(22, 22, 22, 0.1);
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 2px;
+    margin-left: 32px;
+    font-size: 18px;
+}
+
+.search-container {
+    width: 190px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search-box {
+    background: #8585c986;
+    height: 40px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box:hover {
+    padding-left: 10px;
+}
+
+.search-box:hover>.search-txt {
+    width: 150px;
+    padding: 0 6px;
+}
+
+.search-txt:focus .search-box:hover>.search-btn {
+    background: white;
+}
+
+.search-btn {
+    flex-shrink: 0;
+    color: #353597;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #7474df;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.search-txt {
+    flex-grow: 0;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+
+.lang {
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lang-menu {
+    font-weight: bold;
+}
+
+.lang-menu .selected-lang {
+    display: flex;
+    justify-content: space-between;
+    line-height: 2;
+    cursor: pointer;
+}
+
+.lang-menu ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    position: absolute;
+    top: 45px;
+    right: 0px;
+    width: 125px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.lang-menu ul li {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang-menu ul li a {
+    text-decoration: none;
+    width: 125px;
+    padding: 5px 10px;
+    display: block;
+}
+
+.lang-menu ul li:hover {
+    background-color: #f2f2f2;
+}
+
+.lang-menu ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.de::before {
+    background-image: url(https://www.countryflags.io/de/flat/32.png);
+}
+
+.en::before {
+    background-image: url(https://www.countryflags.io/us/flat/32.png);
+}
+
+.fr::before {
+    background-image: url(https://www.countryflags.io/fr/flat/32.png);
+}
+
+.ar::before {
+    background-image: url(https://www.countryflags.io/ae/flat/32.png);
+}
+
+.lang-menu:hover ul {
+    display: block;
+}
+
+.header {
+    height: 95px;
+    overflow: visible;
+}
+
+.imagem_faleconosco {
+    width: 100%;
+    height: 570px;
+    overflow: hidden;
+}
+
+.imagem_faleconosco a:hover {
+    cursor: auto;
+    opacity: 1;
+}
+
+.botaoBaixo {
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    right: 50px;
+    top: 530px;
+
+}
+
+.botaoCima {
+    position: absolute;
+    right: 50px;
+    top: 2600px;
+
+
+}
+
+.texto1 {
+    width: 924px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #756E6E;
+}
+
+.texto2 {
+    width: 923px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+    letter-spacing: 0.01em;
+    color: #161616;
+}
+
+.container {
+    position: absolute;
+    top: 840px;
+    left: 125px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: #161616;
+    width: 1200px;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+form section {
+    min-height: 40px;
+
+}
+
+form section.controls {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 50px);
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #161616;
+
+
+}
+
+form section.controls div:last-of-type {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    
+}
+
+form section.controls>div {
+    display: flex;
+    flex-direction: column;
+}
+
+form section.controls .control {
+    flex-grow: 1;
+    border: 2px solid #756E6E;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+form section.controls textarea {
+    resize: none;
+}
+
+form section.politica-privacidade {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+
+
+    color: #756E6E;
+
+}
+
+form section.politica-privacidade input[type="checkbox"] {
+    width: 26px;
+    height: 26px;
+    color: #353597;
+    background: #353597;
+    border: 2px solid #353597;
+    box-sizing: border-box;
+
+}
+
+form section.politica-privacidade span {
+    margin-left: 10px;
+}
+
+form section.politica-privacidade span>a {
+    text-decoration: underline;
+
+}
+
+form section.send button {
+    height: 45px;
+    width: 170px;
+    cursor: pointer;
+    background-image: url("./visual/botao_enviar.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form section.send {
+    display: flex;
+}
+
+form section.send span {
+    font-size: 10px;
+    margin-left: 20px;
+}
+
+
+
+.box {
+    margin: 30px auto;
+    width: 80%;
+}
+
+section.perguntas-frequentes {
+    margin-top: 100px;
+}
+
+section.perguntas-frequentes .top h2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    letter-spacing: 0.01em;
+
+    color: #756E6E;
+}
+
+section.perguntas-frequentes .top h2 {
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 44px;
+    font-weight: 200;
+    color: #353597;
+
+}
+
+section.perguntas-frequentes .top h2>b {
+    color: #353597;
+    font-weight: 900;
+}
+
+section.perguntas-frequentes .top span {
+    font-size: 12px;
+}
+
+
+section.perguntas-frequentes div:not(.top) {
+    background: #F1F1F1;
+    min-height: 70px;
+    margin-top: 5px;
+    padding: 0 50px;
+    cursor: pointer;
+}
+
+section.perguntas-frequentes div:not(.top) .pergunta {
+
+    line-height: 70px;
+    position: relative;
+    font-weight: bold;
+    display: block;
+}
+
+
+
+section.perguntas-frequentes div:not(.top) .pergunta::before {
+    content: "";
+    display: inline-block;
+    background-image: url("./visual/ícones/outros/accordion-icon.png");
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: calc(100% + 5px);
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.4s ease transform;
+}
+
+section.perguntas-frequentes div:not(.top) .resposta {
+    font-weight: lighter;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s ease;
+}
+
+section.perguntas-frequentes div.open .pergunta::before {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+section.perguntas-frequentes div.open .resposta {
+    height: 50px;
+}
+
+
+
+
+
+
+section.redes_sociais {
+    margin-top: 150px;
+    margin-left: 125px;
+    left: 125px;
+    top: 2384px;
+
+}
+
+
+section.redes_sociais .top2 h2 {
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 44px;
+    font-weight: 200;
+    color: #353597;
+
+}
+
+
+section.redes_sociais .top2 h2>b {
+    color: #353597;
+    font-weight: 900;
+}
+
+section.redes_sociais .icones_MidiasSociais {
+    margin-top: 0px;
+    margin-left: 125px;
+}
+
+section.redes_sociais .top2 {
+    display: inline-block;
+}
+
+footer {
+    width: 1366px;
+    height: 444px;
+    top: 3783px;
+
+background: #353597;
+}
