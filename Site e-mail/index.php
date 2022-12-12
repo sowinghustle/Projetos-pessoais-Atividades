@@ -34,9 +34,9 @@
     //     $mensagem = $_POST["mensagem"];
     // }
 
-    require_once('feito pelo professor/PHPMailer-master/src/PHPMailer.php'); //permitindo acesso as classes que foram extraidas
-    require_once('feito pelo professor/PHPMailer-master/src/SMTP.php');
-    require_once('feito pelo professor/PHPMailer-master/src/Exception.php');
+    require_once('source/PHPMailer-master/src/PHPMailer.php'); //permitindo acesso as classes que foram extraidas
+    require_once('source/PHPMailer-master/src/SMTP.php');
+    require_once('source/PHPMailer-master/src/Exception.php');
 
     use PHPMailer\PHPMailer\PHPMailer; //usando a classe
     use PHPMailer\PHPMailer\SMTP;
